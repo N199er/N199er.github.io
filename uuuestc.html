@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang=zh-ch>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="width=device-width,initial-scale=1,user-scalable=no" name="viewport">
+<title>平安成电智慧通行</title >
+<div style="position:relative;height:40px; line-height:40px; border:1px;z-index:-5;top:40px">
+<h2 align="left"><font color="green" size="5">研究生用户，入校授权有效！</font></h2>
+    <hr style="height:1px;border:none;border-top:1px solid #DDDDDD;" /></div>
+<script type="text/javascript">
+function getNowDate() {
+var date = new Date();
+var year = date.getFullYear() // 年
+var month = date.getMonth() + 1; // 月
+var day  = date.getDate(); // 日
+var hour = date.getHours(); // 时
+var minutes = date.getMinutes(); // 分
+var seconds = date.getSeconds() //秒
+// 给一位数数据前面加 “0”
+if (month >= 1 && month <= 9) {
+ month = "0" + month;
+}
+if (day >= 0 && day <= 9) {
+ day = "0" + day;
+}
+if (hour >= 0 && hour <= 9) {
+ hour = "0" + hour;
+}
+if (minutes >= 0 && minutes <= 9) {
+ minutes = "0" + minutes;
+}
+if (seconds >= 0 && seconds <= 9) {
+ seconds = "0" + seconds;
+}
+document.getElementById("info").innerHTML = year + "-" + month + "-" + day + "-" + hour + ":" + minutes + ":" + seconds;
+}
+</script>
+<!--<form action="">-->
+<!--    name:<input type="text">-->
+<!--    <input type="submit">-->
+<!--</form>>-->
+
+
+<style>
+
+span.tip{
+	position:relative;
+	font-weight:bold;
+	color:blue;
+	right:-180px;
+	padding: 20px;
+	top:-100px;
+	}
+h2.pos_top
+{
+	position:relative;
+	top:-60px;
+    right:10px;
+}
+img.cc{
+position:relative;
+top:10px}
+</style>
+<div style="width=400px;height:320px;">
+<div style="position:relative;height:40px; line-height:40px; border:1px;z-index:-5;top:60px">
+        <img src="1.png" height="30" width="30">
+         用户姓名
+        <h2 align="right" class="pos_top"><font size="5" color="black" >班长</p></font></h2>
+</div>
+<br>
+<div style="position:relative;height:40px; line-height:40px; border:1px;z-index:-5;top:60px">
+    <img src="2.png" height="30" width="30">
+    登记类型
+    <h2 align="right" class="pos_top" ><font size="5" color="black" >研究生（硕士）</font></h2>
+</div>
+<br>
+<div style="position:relative;height:40px; line-height:40px; border:1px;z-index:-5;top:60px">
+<img src="3.png" height="30" width="30">
+    登记时间
+
+</div>
+<br>
+<div align="center" style="position:relative;height:40px; line-height:40px; border:1px;z-index:-5;top:60px"><img src="4.png" height="50" width="55"></div>
+<div style="position:relative;z-index:10;right:-210px;top:-30px;width:200px; height:20px">
+<marquee behavior="scroll" scrollamount="10">
+    <span  id="info" style="color:#33CC33;font-weight:bold;"></span>
+</marquee>
+</div>
+</div>
+
+
+
+<body onload="getNowDate()">
